@@ -116,7 +116,13 @@
                             <outletCollection property="gestureRecognizers" destination="CdG-B3-r5u" appends="YES" id="SCz-f1-9dU"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="xs1-cS-Yau"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="xs1-cS-Yau">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Asn-Yx-ut8">
+                            <connections>
+                                <segue destination="Mlq-0J-1H4" kind="push" id="XnU-wr-EoL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="9Us-Uo-lTy" id="9GX-Sk-egP"/>
                         <outlet property="controllerField" destination="I4W-Ar-TdY" id="k7R-p7-cNV"/>
@@ -133,7 +139,23 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="89.732142857142847"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="89.732142857142847"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="yUc-s3-v4F">
+            <objects>
+                <viewController id="Mlq-0J-1H4" customClass="SettingsViewController" customModule="tip_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qEx-35-0xt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ISB-rX-NtO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="966-Dy-dkn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbW-98-ELy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2595" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Acd-rc-XRc">
@@ -146,12 +168,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="k8s-6U-efb"/>
+                        <segue destination="9wM-0a-mHu" kind="relationship" relationship="rootViewController" id="k8s-6U-efb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOf-Ms-rre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ubv-6b-Qf7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9wM-0a-mHu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="3Gy-vJ-TW2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yfk-ai-iqd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FQG-I1-AWB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huR-bI-IzP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="89.732142857142847"/>
         </scene>
     </scenes>
 </document>
